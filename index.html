@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quizzes</title>
+    
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>img[alt="www.000webhost.com"]{display:none;}</style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark sticky-top" id="header">
+        <h2 style="padding-right: 89.674px;">Quizzes</h2>
+        <button type="button" class="btn btn-secondary create-new">Create new quiz</button>
+    <div style="text-align: end;" id="select-holder">
+        <div class="form-group">
+            <label for="class" class="col-sm-2 control-label" style="padding-right: 9px !important; display: inline; padding-left: 41px;"> Class </label>
+            <select class="custom-select" id="class" name="class" style="max-width: 15vh;">
+                <option selected value="*">All</option>
+                <optgroup label="9">
+                    <option value="9A">9A</option>
+                    <option value="9B">9B</option>
+                    <option value="9C">9C</option>
+                    <option value="9D">9D</option>
+                    <option value="9E">9E</option>
+                    <option value="9F">9F</option>
+                    <option value="9G">9G</option>
+                    <option value="9H">9H</option>
+                </optgroup>
+                <optgroup label="10">
+                    <option value="10A">10A</option>
+                    <option value="10B">10B</option>
+                    <option value="10C">10C</option>
+                    <option value="10D">10D</option>
+                    <option value="10E">10E</option>
+                    <option value="10F">10F</option>
+                    <option value="10G">10G</option>
+                    <option value="10H">10H</option>
+                </optgroup>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="branch" class="col-sm-2 control-label" style="padding-right: 9px !important; display: inline; padding-left: 2px !important"> Art branch </label>
+            <select class="custom-select" id="branch" name="branch" style="max-width: 15vh;">
+                <option selected value="*">All</option>
+                <option value="A kompozíció">A kompozíció</option>
+                <option value="Grafika">Grafika</option>
+                <option value="Szobrászat">Szobrászat</option>
+                <option value="Fotó">Fotó</option>
+                <option value="Festészet">Festészet</option>
+                <option value="Iparművészet">Iparművészet</option>
+                <option value="Design">Design</option>
+                <option value="Kiadványok">Kiadványok</option>
+                <option value="Népművészet">Népművészet</option>
+                <option value="Színházművészet">Színházművészet</option>
+                <option value="Építészet">Építészet</option>
+                <option value="Filmművészet kezdetei">Filmművészet kezdetei</option>
+                <option value="Filmes korszakok">Filmes korszakok</option>
+                <option value="Filmműfajok">Filmműfajok</option>
+                <option value="A film formanyelvének alapjai">A film formanyelvének alapjai</option>
+                <option value="Múzeumok">Múzeumok</option>
+                <option value="Kultúra">Kultúra</option>
+              </select>
+        </div>
+    </div>
+    </nav>
+
+    <div id="content">
+            <div class="row" id="forms-container" style="margin: 25px; margin-bottom: 50px;">
+                
+            </div>
+    </div>
+
+    <div id="footer" class="fixed-bottom" ></div>
+    <script src="scripts/jquery-3.4.1.js"></script>
+    <script src="scripts/popper.min.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

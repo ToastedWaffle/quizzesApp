@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-image: url("../img/bg.png");
+    background-repeat: repeat;
+}
+
+#header{
+    color: white;
+    padding: 1.5rem 1rem;
+    margin-bottom: 20px;
+    background-color: #5292d2d1 !important;
+}
+
+#edit-btn{
+    position: absolute;
+    right: 0px;
+    margin-right: 10px;
+}
+
+#form{
+    background-color: grey;
+    height: 50px;
+    padding-top: 5px;
+    color: white;
+}
+
+#create-form-div{
+    max-width: 500px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+#footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40;
+    color: white;
+    height: 25px;
+    text-align: center;
+    z-index: 999;
+    background-color: #5292d2 !important;
+}
+
+.question-section{
+    border: 1px solid rgba(0, 0, 0, 0.650);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.hidden{
+    display: none;
+}
+
+::placeholder {
+    color: red !important;
+    opacity: 1 !important;
+}
+
+.btn-dark{
+    background-color: #90c656 !important;
+    border-color: #7dad48 !important;
+}
+.btn-dark:hover{
+    background-color: #7dad48 !important;
+    border-color: #7dad48 !important;
+}

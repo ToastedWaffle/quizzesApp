@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create New Quiz</title>
+    
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/create_style.css">
+    <style>img[alt="www.000webhost.com"]{display:none;}</style>
+</head>
+<body>
+        <!-- Modal -->
+        <div class="modal" tabindex="-1" role="dialog" id="modal">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Uploading picture</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Please wait.</p>
+            </div>
+            </div>
+        </div>
+        </div>
+
+    <nav class="navbar navbar-dark bg-dark" id="header">
+        <h2>Create New Quiz</h2>
+    </nav>
+        <div class="form-group mx-auto" id="create-form-div">
+                Quiz Name:
+                <input id="name" type="text" class="form-control">
+                <br>
+                Your Name:
+                <input id="author" type="text" class="form-control">
+                <br>
+                Your Class:
+                <select class="custom-select" id="class">
+                    <optgroup label="9">
+                        <option selected value="9A">9A</option>
+                        <option value="9B">9B</option>
+                        <option value="9C">9C</option>
+                        <option value="9D">9D</option>
+                        <option value="9E">9E</option>
+                        <option value="9F">9F</option>
+                        <option value="9G">9G</option>
+                        <option value="9H">9H</option>
+                    </optgroup>
+                    <optgroup label="10">
+                        <option value="10A">10A</option>
+                        <option value="10B">10B</option>
+                        <option value="10C">10C</option>
+                        <option value="10D">10D</option>
+                        <option value="10E">10E</option>
+                        <option value="10F">10F</option>
+                        <option value="10G">10G</option>
+                        <option value="10H">10H</option>
+                    </optgroup>
+                </select>
+                <br>
+                <br>
+                Art branch:
+                <select class="custom-select" id="branch">
+                  <option selected value="A kompozíció">A kompozíció</option>
+                  <option value="Grafika">Grafika</option>
+                  <option value="Szobrászat">Szobrászat</option>
+                  <option value="Fotó">Fotó</option>
+                  <option value="Festészet">Festészet</option>
+                  <option value="Iparművészet">Iparművészet</option>
+                  <option value="Design">Design</option>
+                  <option value="Kiadványok">Kiadványok</option>
+                  <option value="Népművészet">Népművészet</option>
+                  <option value="Színházművészet">Színházművészet</option>
+                  <option value="Építészet">Építészet</option>
+                  <option value="Filmművészet kezdetei">Filmművészet kezdetei</option>
+                  <option value="Filmes korszakok">Filmes korszakok</option>
+                  <option value="Filmműfajok">Filmműfajok</option>
+                  <option value="A film formanyelvének alapjai">A film formanyelvének alapjai</option>
+                  <option value="Múzeumok">Múzeumok</option>
+                  <option value="Kultúra">Kultúra</option>
+                </select>
+                <br>
+                <br>
+                <div id="questions">
+                
+                <div id="question-1" class="question-section">
+                
+                <!-- link:https://www.logistec.com/wp-content/uploads/2017/12/placeholder.png -->
+                Picture:
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="picture-input" aria-describedby="inputGroupFileAddon01" accept="image/*" data-max-size="5000">
+                    <label class="custom-file-label" for="picture-input">Choose file</label>
+                    <br>
+                    <br>
+                </div>
+
+                Question:
+                <input type="text" class="form-control">
+                <br>
+                Answer nr.1:
+                <input id="answer-1-1" type="text" class="form-control">
+                Answer nr.2:
+                <input id="answer-1-2" type="text" class="form-control">
+                Answer nr.3:
+                <input id="answer-1-3" type="text" class="form-control">
+                Answer nr.4:
+                <input id="answer-1-4" type="text" class="form-control">
+
+                Right answer:
+                <select class="custom-select" id="right-answer-1">
+                  <option selected value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+                </div>
+
+                </div>
+                
+                <button type="button" class="btn btn-dark" id="add-question-btn">Add question</button>
+                <br><br>
+                <button type="button" class="btn btn-dark" id="upload-questions-btn">Upload</button>
+                <button type="button" class="btn btn-dark" id="back-btn">Go back</button>
+                <button type="button" class="btn btn-dark" id="reset-btn">Reset</button>
+                <br><br>
+            </div>
+
+        <div id="footer"></div>
+        <script src="../scripts/jquery-3.4.1.js"></script>
+        <script src="../scripts/popper.min.js"></script>
+        <script src="../scripts/bootstrap.js"></script>
+    <script src="../scripts/create_script.js"></script>
+</body>
+</html>
