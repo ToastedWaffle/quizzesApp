@@ -119,18 +119,18 @@ $(document).ready(function(){
                     var val = $("input[name='" + "answer-"+i + "']:checked").attr('id')[1];
                     if( val == form.question[i].crrct) {
                         points++;
-                        inputDiv.style.background = "#1c6e1c";
+                        inputDiv.style.background = "#8bc751";
                         inputDiv.style.borderRadius = "5px";
                         input.style.color = "white";
                     }
                     else{
-                        inputDiv.style.background = "#bc4444";
+                        inputDiv.style.background = "#df4f48";
                         inputDiv.style.borderRadius = "5px";
                         input.style.color = "white";
                     }
                 }
                 
-                $("#btn-div").append('<h1 style="background-color: white;border: solid;border-radius: 20px;padding: 15px;text-align: center;margin-top: 15px;">You scored '+Math.round((points/numq)*100)+'%</h1>');
+                $("#btn-div").append('<h1 style="background-color: white;padding: 15px;text-align: center;margin-top: 15px;">You scored '+Math.round((points/numq)*100)+'%</h1>');
                 $("input[type=radio]").attr('disabled', true);
                 $(".submit").attr('disabled',true);
                 $("html, body").animate({ scrollTop: $(document).height() }, 1000);
